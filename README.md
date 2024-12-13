@@ -1,2 +1,2 @@
 # Responsi-PGPBL
-Responsi PGPBL AgriGo APp
+Responsi PGPBL AgriGo App
