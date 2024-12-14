@@ -1,13 +1,16 @@
 import { View, Text } from 'react-native';
 import React from 'react';
 import * as Icon from "react-native-feather";
-
-import React from 'react';
+import { themeColors } from '../theme';
 import { View, Text, Image, TouchableWithoutFeedback } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function PetaniCard({ item }) {
+    const navigation = useNavigation();
     return (
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback
+        onPress={()=> navigation.navigate('Petani', {...item})}
+        >
             <View
                 style={{
                     shadowColor: themeColors.bgColor(0.2),
