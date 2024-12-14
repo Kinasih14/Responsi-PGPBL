@@ -9,7 +9,9 @@ import PetaniScreen from './screens/PetaniScreen';
 
 export default function Navigation() {
     return (
-        <NavigationContainer>
+        <NavigationContainer screenOptions={{
+            headerShown: false
+        }}>
             <Stack.Navigator>
             <Stack.Screen name='Home' component={HomeScreen} />
             <Stack.Screen name='Petani' component={PetaniScreen} />
